@@ -46,7 +46,7 @@
     </div>
 
     <div class="buttons-container">
-      <button onclick="setMap('shuttle')">Shuttles/Jeepney Lines</button>
+      <button onclick="setMap('shuttle')">Jeepney Lines</button>
       <button onclick="setMap('restaurants')">Restaurants</button>
       <button onclick="setMap('clinics')">Medical Clinics</button>
       <button onclick="setMap('police')">Police Stations</button>
@@ -56,8 +56,9 @@
       <button onclick="setMap('markets')">Market/Malls</button>
     </div>
   </main>
+<div id="chat-container" class="chat-container hidden">
 
-  <script>
+<script>
     function toggleDropdown() {
       const menu = document.getElementById('dropdown');
       menu.classList.toggle('show');
