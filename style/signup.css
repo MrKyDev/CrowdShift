@@ -1,0 +1,106 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+.auth-bg {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Glass form container */
+.glass-form {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: white;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Logo */
+.login-logo {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+/* Form heading */
+.glass-form h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.glass-form input {
+  width: 100%;
+  padding: 14px 18px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 15px;
+  font-family: inherit;
+  line-height: 1.4;
+  transition: background 0.3s ease;
+}
+
+.glass-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+}
+
+/* Button */
+.glass-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #ffffff;
+  color: #2a5298;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.glass-form button:hover {
+  background: #d0e1ff;
+}
+
+/* Link */
+.glass-form p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.glass-form a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

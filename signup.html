@@ -4,19 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CrowdShift - Sign Up</title>
-  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="style/signup.css" />
   <link rel="icon" type="image/x-icon" href="/img/FavIcon.png">
 </head>
 <body class="auth-bg">
   <div class="glass-form">
-  <img src="img/FavIcon.png" alt="CrowdShift Logo" class="login-logo" />
-  <h2>Register to CrowdShift</h2>
-  <input type="text" placeholder="Full Name" />
-  <input type="email" placeholder="Email" />
-  <input type="password" placeholder="Password" />
-  <button onclick="mockLogin()">Register</button>
-  <p>Already have an account? <a href="Index.html">Login</a></p>
-</div>
-  <script src="script/script.js"></script>
+    <img src="img/FavIcon.png" alt="CrowdShift Logo" class="login-logo" />
+    <h2>Register to CrowdShift</h2>
+    <input type="text" placeholder="Full Name" />
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button onclick="mockLogin()">Register</button>
+    <p>Already have an account? <a href="Index.html">Login</a></p>
+  </div>
+
+  <script>
+    function mockLogin() {
+      alert("Registration Successful! Redirecting...");
+      window.location.href = "index.html"; // replace with dashboard or homepage if needed
+    }
+  </script>
 </body>
 </html>

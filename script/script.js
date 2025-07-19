@@ -43,4 +43,40 @@ function setMap(category) {
   map.src = src;
 }
 
+ function mockLogin() {
+      window.location.href = "main.html";
+    }
 
+    // Preloader script
+     // Simulate successful login (mock)
+    function mockLogin() {
+      // You can replace this alert with: window.location.href = "main.html";
+      alert("✅ Logged in successfully! Redirecting to dashboard...");
+      window.location.href = "main.html"; // mock redirect
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const loader = document.getElementById("loader");
+      const typingElement = document.getElementById("typing");
+      const content = document.getElementById("content");
+
+      const text = "CrowdShift";
+      let charIndex = 0;
+
+      function typeEffect() {
+        if (charIndex < text.length) {
+          typingElement.innerHTML += text.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeEffect, 150);
+        } else {
+          setTimeout(() => {
+            loader.style.opacity = "0";
+            loader.style.pointerEvents = "none";
+            content.style.opacity = "1";
+            content.style.pointerEvents = "auto";
+          }, 800); // delay before showing main content
+        }
+      }
+
+      typeEffect();
+    });
