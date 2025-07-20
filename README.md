@@ -1,2 +1,2 @@
 # CrowdShift
-<img src=file:///C:/Users/Admin/Desktop/CrowdShift/img/Main%20UI.png>
+<img src=https://github.com/MrKyDev/CrowdShift/blob/main/img/Main%20UI.png?raw=true>
