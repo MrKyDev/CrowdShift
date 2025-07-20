@@ -60,6 +60,7 @@
       <button onclick="setMap('markets')"><i class="fas fa-shopping-cart"></i> Market/Malls</button>
       <button onclick="setMap('parks')"><i class="fas fa-tree"></i> Parks</button>
       <button onclick="setMap('tourist')"><i class="fas fa-camera-retro"></i> Tourist Spots</button>
+      <button onclick="setMap('hotels')"><i class="fas fa-bed"></i> Hotels/ Transients</button>
     </div>
   </main>
 
@@ -95,7 +96,9 @@
           url = "https://www.google.com/maps?q=banks+and+atms+in+Baguio&output=embed"; break;
         case 'markets':
           url = "https://www.google.com/maps?q=markets+and+malls+in+Baguio&output=embed"; break;
-      }
+        case 'hotels':
+          url = "https://www.google.com/maps?q=hotels+motels+transients+in+Baguio&output=embed"; break;
+        }
 
       mapFrame.src = url;
     }
