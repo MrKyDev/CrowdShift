@@ -105,3 +105,4 @@ function mockLogin() {
   alert("✅ Logged in successfully!");
   window.location.href = "main.html"; // Change to your main page
 }
+
