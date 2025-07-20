@@ -1,2 +1,2 @@
 # CrowdShift
-<img src=https://github.com/MrKyDev/Gaia/blob/main/img/main%20UI.png>
+<img src=https://github.com/MrKyDev/CrowdShift/blob/main/img/Main%20UI.png>
