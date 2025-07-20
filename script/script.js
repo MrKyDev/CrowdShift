@@ -47,12 +47,9 @@ function setMap(category) {
       window.location.href = "main.html";
     }
 
-    // Preloader script
-     // Simulate successful login (mock)
     function mockLogin() {
-      // You can replace this alert with: window.location.href = "main.html";
       alert("✅ Logged in successfully! Redirecting to dashboard...");
-      window.location.href = "main.html"; // mock redirect
+      window.location.href = "main.html"; 
     }
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -74,9 +71,19 @@ function setMap(category) {
             loader.style.pointerEvents = "none";
             content.style.opacity = "1";
             content.style.pointerEvents = "auto";
-          }, 800); // delay before showing main content
+          }, 800);
         }
       }
 
       typeEffect();
     });
+
+    function toggleDropdown() {
+  const dropdown = document.getElementById("dropdown");
+  dropdown.classList.toggle("show");
+}
+
+function toggleMobileMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("show");
+}

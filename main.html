@@ -6,26 +6,34 @@
   <title>CrowdShift - Baguio City Map</title>
   <link rel="stylesheet" href="style/styles.css" />
 <link rel="icon" type="image/x-icon" href="/img/FavIcon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-<body>
+<body> 
 
-  <nav class="navbar">
-    <div class="logo">
-  <img src="img/FavIcon.png" width="40" alt="CrowdShift Logo">
-  <span class="logo-text">CrowdShift</span>
-</div>
-    <div class="nav-links" id="navLinks">
-  <a href="#" onclick="showAboutUs()">About Us</a>
- <div class="user-dropdown">
-  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User" class="user-icon" onclick="toggleDropdown()" />
-  <div class="dropdown-menu" id="dropdown">
-    <a href="#" onclick="alert('Edit Account is still under development.')">Edit Account</a>
-    <a href="index.html">Logout</a>
+ <nav class="navbar">
+  <div class="logo">
+    <img src="img/FavIcon.png" width="40" alt="CrowdShift Logo">
+    <span class="logo-text">CrowdShift</span>
   </div>
-</div>
 
+  <!-- Hamburger Icon -->
+  <div class="burger" onclick="toggleMobileMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#" onclick="showAboutUs()">About Us</a>
+    <div class="user-dropdown">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User" class="user-icon" onclick="toggleDropdown()" />
+      <div class="dropdown-menu" id="dropdown">
+        <a href="#" onclick="alert('Edit Account is still under development.')">Edit Account</a>
+        <a href="index.html">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
 <!-- About Us Modal -->
 <div id="aboutUsModal" style="display: none;" class="about-glass">
@@ -46,14 +54,14 @@
     </div>
 
     <div class="buttons-container">
-      <button onclick="setMap('shuttle')">Jeepney Lines</button>
-      <button onclick="setMap('restaurants')">Restaurants</button>
-      <button onclick="setMap('clinics')">Medical Clinics</button>
-      <button onclick="setMap('police')">Police Stations</button>
-      <button onclick="setMap('parks')">Parks</button>
-      <button onclick="setMap('tourist')">Tourist Spots</button>
-      <button onclick="setMap('banks')">Banks/ATMs</button>
-      <button onclick="setMap('markets')">Market/Malls</button>
+      <button onclick="setMap('shuttle')"><i class="fas fa-bus"></i> Jeepney Lines</button>
+      <button onclick="setMap('clinics')"><i class="fas fa-clinic-medical"></i> Medical Clinics</button>
+      <button onclick="setMap('police')"><i class="fas fa-shield-alt"></i> Police Stations</button>
+      <button onclick="setMap('banks')"><i class="fas fa-university"></i> Banks/ATMs</button>
+      <button onclick="setMap('restaurants')"><i class="fas fa-utensils"></i> Restaurants</button>
+      <button onclick="setMap('markets')"><i class="fas fa-shopping-cart"></i> Market/Malls</button>
+      <button onclick="setMap('parks')"><i class="fas fa-tree"></i> Parks</button>
+      <button onclick="setMap('tourist')"><i class="fas fa-camera-retro"></i> Tourist Spots</button>
     </div>
   </main>
 <div id="chat-container" class="chat-container hidden">
@@ -111,5 +119,6 @@ function closeAboutUs() {
   document.getElementById("aboutUsModal").style.display = "none";
 }
   </script>
+  <script src="script/script.js"></script>
 </body>
 </html>
