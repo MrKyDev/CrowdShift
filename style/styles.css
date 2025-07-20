@@ -160,6 +160,15 @@ button:nth-child(7) { background-color: #6fd6e8; color: #212121}
 button:nth-child(8) { background-color: #6fd6e8; color: #212121}
 button:nth-child(9) {background-color: #6fd6e8; color: #212121}
 
+/* Highlight for selected button */
+.buttons-container button.active {
+  background-color: #0056b3 !important;
+  color: #fff !important;
+  box-shadow: 0 0 10px rgba(0, 86, 179, 0.6);
+  transform: scale(1.05);
+}
+
+
 /* Modal */
 .about-glass {
   position: fixed;
