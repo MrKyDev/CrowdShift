@@ -5,6 +5,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background:url(../img/bg.png);
+      background-size: cover no-repeat;
     }
 
     /* Preloader */

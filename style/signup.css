@@ -13,7 +13,7 @@ body, html {
 
 .auth-bg {
   background:url(../img/bg.png);
-  background-size: cover;
+  background-size: cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
